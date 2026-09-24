@@ -17,3 +17,8 @@ cmake-build*
 
 # Skyrim archive files
 *.bsa
+
+# xmake
+.xmake
+build
+vsxmake*

@@ -1,12 +1,9 @@
 #pragma once
 
-// This file is required.
-#define  _SILENCE_CXX17_CODECVT_HEADER_DEPRECATION_WARNING 1
+// std::wstring_convert / <codecvt> are deprecated in C++17 but still used for path logging
+#define _SILENCE_CXX17_CODECVT_HEADER_DEPRECATION_WARNING 1
 
-#include "RE/Fallout.h"
 #include "F4SE/F4SE.h"
-
-#include <spdlog/sinks/basic_file_sink.h>
-namespace logger = F4SE::log;
+#include "RE/Fallout.h"
 
 using namespace std::literals;
